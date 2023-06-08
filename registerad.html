@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Resources/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+  <title>Document</title>
+
+</head>
+<body  >
+    <header>
+        <nav class="navbar navbar-light bg-dark min-vw-100">
+          <h2 class="p-3 text-white" >Granja Unitropista</h2>
+          <a class="nav-link" href="registerad.html">Iniciar Sesion</a>
+          <ul class="navbar-nav">
+            <a class="nav-link" href="index.html">Volver</a>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modal"
+              >
+              
+                <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+  <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+    <section class="main">
+      <article>
+        <div class="card p-4 text-light bg-dark mb-5">
+					<div class="card-body">
+              <div class="mb-3">
+                <div class="card-header">
+                  <h3>Iniciar sesión </h3>
+                  </div>
+                  <br>
+                  <label for="">Usuario: </label>
+                  <input type="email" class="form-control" id="emailuser" placeholder="Email">
+                  <label for="">Contraseña: </label>
+                  <input type="password" class="form-control" id="pwsuser" placeholder="Ingrese clave">
+              </div>
+              <div class="d-grid gap-2">
+                  <input type="button" id="loginbtn" value="Iniciar Sesión" class="btn btn-primary">
+                 
+                </div>
+              <br>
+					</div>
+        </div>      
+      </article>
+    </section>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script type="module" src="./cotroller/index.js"></script>
+
+</body>
+</html>
